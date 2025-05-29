@@ -1,8 +1,16 @@
+.main-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
 .wrapper {
-    width: 100%;
     display: flex;
     flex-flow: row;
+    flex-grow: 1;
+    z-index: 9999;
 }
+
 .wrapper .page {
-    width: 100%;
+    flex-grow: 1;
 }
