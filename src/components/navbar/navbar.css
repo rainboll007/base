@@ -1,0 +1,208 @@
+.navbar,
+.navbar .container-fluid {
+    padding: 0 !important;
+    color: #a0a0a0 !important;
+}
+
+.navbar img {
+    height: 40px !important;
+}
+
+.custom-left-section .gold-box {
+    width: 30px;
+    height: 100%;
+    background-color: #e0c37a;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+
+.left-menu,
+.right-menu {
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 60px;
+    color: #969696;
+}
+
+.right-menu {
+    box-shadow: inset -2px 0 10px #eee;
+}
+
+.left-menu>.menu-list,
+.right-menu>.menu-list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.left-menu .menu-list li,
+.right-menu .menu-list li {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    transition: all .4s;
+    text-align: center;
+}
+
+.left-menu .menu-list span {
+    display: none;
+    min-width: 40px;
+    position: absolute;
+    padding: 0 15px;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    text-align: left;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all .4s;
+    border-radius: 60px;
+}
+
+.left-menu .menu-list li:hover,
+.left-menu .menu-list li:hover span {
+    align-items: center;
+    background-color: burlywood;
+    opacity: 1;
+    color: white;
+}
+
+.left-menu .menu-list li:hover span {
+    display: flex;
+}
+
+.process-pin {
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.admision {
+    border-color: #6a003a;
+    color: #6a003a;
+}
+
+.promoción {
+    border-color: #966b1b;
+    color: #966b1b;
+}
+
+.reconocimiento {
+    border-color: #e0c37a;
+    color: #e0c37a;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.flag img {
+    width: 30px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/*  Generado */
+
+.custom-navbar-bg {
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 65px;
+}
+
+.custom-left-section {
+    background-color: #6a003a;
+    /* El color guinda/maroon de la sección izquierda */
+    min-width: 150px;
+    /* Ancho fijo para la sección izquierda */
+    height: 65px;
+    /* Asegura que tenga la misma altura que la navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px 0 25px;
+    /* Padding interno */
+    position: relative;
+}
+
+/* Ajustes para el logo de Educación dentro de la sección izquierda */
+.custom-left-section .navbar-brand {
+    padding: 0;
+    /* Elimina el padding por defecto del brand */
+}
+
+.custom-middle-section {
+    padding-left: 20px;
+    /* Espacio entre la sección izquierda y la media */
+}
+
+.custom-outline-btn {
+    border-color: #a0a0a0;
+    /* Color del borde del botón "Menú" */
+    color: #333;
+    /* Color del texto del botón "Menú" */
+    font-weight: bold;
+}
+
+.custom-outline-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ajustes para los enlaces de navegación */
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+/* Ajustes para el dropdown del usuario en pantallas grandes */
+@media (min-width: 992px) {
+    .custom-middle-section {
+        justify-content: flex-start;
+        /* Alinea USICAMM a la izquierda */
+        padding-left: 20px;
+    }
+
+    .custom-middle-section .navbar-brand {
+        margin-right: 20px;
+        /* Espacio entre USICAMM y el nombre del usuario */
+    }
+}
+
+/* Ocultar el logo de Educación en el lado izquierdo en pantallas pequeñas si no cabe */
+@media (max-width: 767.98px) {
+    .custom-left-section .navbar-brand span {
+        display: none !important;
+        /* Oculta el texto "Educación" */
+    }
+
+    .custom-left-section {
+        min-width: unset;
+        /* Elimina el ancho fijo para adaptarse */
+        width: auto;
+        padding: 0 10px;
+    }
+}
