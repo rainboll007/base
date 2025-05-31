@@ -1,7 +1,14 @@
-import Wrapper from "./components/wrapper/wrapper";
+import { BrowserRouter } from "react-router-dom";
 
+import AppRouter from "./config/router";
 function App() {
-  return (<Wrapper />);
+  return (
+  <BrowserRouter>
+      
+      <AppRouter />
+  </BrowserRouter>
+  );
+
 }
 
 export default App;
