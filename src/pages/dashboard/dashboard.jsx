@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { User, BookOpen, Calendar, Award, Check } from 'lucide-react';
-import { Navbar } from '../navbar';
 
 const progressData = [
   { label: 'INFORMACIÓN', value: 90, color: '#d72660', desc: 'Verificada' },
@@ -12,7 +11,6 @@ const progressData = [
 const Dashboard = () => {
   return (
     <>
-      <Navbar />
       <div
         className="container-fluid py-4"
         style={{

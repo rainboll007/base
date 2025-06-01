@@ -1,0 +1,18 @@
+.center-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.error-message {
+    text-align: center;
+    color: #b3b3b3;
+}
+.error-message h1 {
+    font-size: 120pt !important;
+    font-weight: bold;
+}
+.error-message p {
+    font-size: 14pt;
+}

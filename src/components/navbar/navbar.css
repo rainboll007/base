@@ -67,6 +67,7 @@
     opacity: 0;
     transition: all .4s;
     border-radius: 60px;
+    z-index: 999999;
 }
 
 .left-menu .menu-list li:hover,

@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, RigthMenu, LeftMenu } from "../navbar";
-import Home from "../../pages/home/home";
+import AppRouter from "../../config/router";
 import './wrapper.css'
 
 function Wrapper(params) {
@@ -10,11 +9,7 @@ function Wrapper(params) {
             <div className='wrapper'>
                 <LeftMenu />
                 <div className="page">
-                    <Router>
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                        </Routes>
-                    </Router>
+                    <AppRouter />
                 </div>
                 <RigthMenu />
             </div>

@@ -1,13 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
+import Wrapper from "./components/wrapper/wrapper";
 
-import AppRouter from "./config/router";
 function App() {
-  return (
-  <BrowserRouter>
-      
-      <AppRouter />
-  </BrowserRouter>
-  );
+  return (<Wrapper />);
 
 }
 
